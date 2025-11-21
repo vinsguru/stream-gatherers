@@ -24,7 +24,7 @@ public class GeoDataClient {
         return this.restClient.get()
                               .uri(REGIONS)
                               .retrieve()
-                              .body(new ParameterizedTypeReference<List<Region>>() {
+                              .body(new ParameterizedTypeReference<>() {
                               });
     }
 

@@ -26,7 +26,7 @@ public class GeoCrawlerService implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         log.info("records count before: {}", this.cityRepository.count());
         this.geoDataClient.getRegions()
                           .stream()
